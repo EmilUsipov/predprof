@@ -14,7 +14,9 @@ while question != 'game':
         print('Персонаж <characters> встречается в играх: \n')
         for games in data_names[question]:
             c += 1
-            if c > 5: break
+            if c > 5: 
+                print('и др.')
+                break
             print(f'{games}\n')
     else:
         print('Этого персонажа не существует')
